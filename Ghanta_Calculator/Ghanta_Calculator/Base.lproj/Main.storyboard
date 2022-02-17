@@ -16,15 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-3H-bBP">
-                                <rect key="frame" x="32" y="156" width="350" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="mih-pM-8zE">
-                                <rect key="frame" x="32" y="321" width="350" height="306"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="mih-pM-8zE">
+                                <rect key="frame" x="32" y="295" width="350" height="306"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-FS-GTY">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
@@ -292,18 +285,29 @@
                                     <constraint firstItem="7dq-hx-uLJ" firstAttribute="centerX" secondItem="mih-pM-8zE" secondAttribute="centerX" id="k9M-2o-JBk"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-vM-NqM">
+                                <rect key="frame" x="32" y="190" width="350" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mih-pM-8zE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mi-9V-L3h"/>
                             <constraint firstItem="mih-pM-8zE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8q5-tl-8qd"/>
+                            <constraint firstItem="mih-pM-8zE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QdF-6J-yoj"/>
                             <constraint firstItem="mih-pM-8zE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tpm-Vt-VjO"/>
+                            <constraint firstItem="mih-pM-8zE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wjl-CK-ibr"/>
                             <constraint firstItem="mih-pM-8zE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOF-4B-EMl"/>
+                            <constraint firstItem="mih-pM-8zE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpg-9j-ey6"/>
                             <constraint firstItem="mih-pM-8zE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="feq-UM-IuW"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DisplayLabel" destination="Y6Y-3H-bBP" id="Vu7-rF-I5z"/>
+                        <outlet property="DisplayLabel" destination="1LB-vM-NqM" id="YsC-Bu-dQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

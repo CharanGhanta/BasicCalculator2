@@ -10,6 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var DisplayLabel: UILabel!
+    
+    
+    
+    
+    var varOperator = "+"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -57,45 +63,54 @@ class ViewController: UIViewController {
     
     
     @IBAction func zero(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "0"
     }
     
     
     @IBAction func One(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "1"
     }
     
     
     @IBAction func two(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "2"
     }
     
     
     @IBAction func Three(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "3"
     }
     
     
     @IBAction func four(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "4"
     }
     
     
     
     @IBAction func five(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "5"
     }
     
     
-    
     @IBAction func six(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "6"
     }
     
     
     
     @IBAction func seven(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "7"
     }
     
     
     @IBAction func eight(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "8"
     }
     
     
     @IBAction func nine(_ sender: Any) {
+        DisplayLabel.text = DisplayLabel.text! + "9"
     }
     
     
